@@ -1,0 +1,35 @@
+header{    
+    display:flex;
+    width:100%;      
+    justify-content:center;    
+}
+
+.searchBar{
+display:flex;
+justify-content:center;
+align-items:center;
+column-gap:5px;
+width:40%;
+}
+#inputValue{
+    font-size:1.2rem;
+    width:100%;    
+}
+
+#displayOutput{
+    display:flex;
+    justify-content:center;
+    margin:3px;  
+}
+.displaydiv{    
+    width:40%;    
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+    box-shadow: 1px 2px 3px 4px rgba(20,20,20,0.4);
+    padding:4px;
+}
+#output div{
+    font-size:1.3rem;
+    row-gap:0.6rem;
+    padding:1px;
+}
