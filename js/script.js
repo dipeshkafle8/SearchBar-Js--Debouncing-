@@ -2,6 +2,7 @@ const inputValue=document.getElementById("inputValue");
 const output=document.getElementById("output");
 let intervalId;
 
+//displaying data on UI
 function displayOnUI(data){
     output.innerText="";   
     data.products.forEach((el)=>{
@@ -13,6 +14,8 @@ function displayOnUI(data){
     output.classList.add("displaydiv");
 }
 
+
+//fetching data from api
 async function fetchDataFromAPI(){
    let data=await fetch(`https://dummyjson.com/products/search?q=${inputValue.value}`);
    data=await data.json();
@@ -20,6 +23,7 @@ async function fetchDataFromAPI(){
 }
 
 
+//on typing something on inputbox
 inputValue.addEventListener('keyup',()=>{
     if(intervalId){
         clearTimeout(intervalId);
